@@ -1,9 +1,14 @@
 import './App.css'
+import Header from './components/Header'
 
 function App() {
   return (
     <>
-      <h1>Hej, jag heter Amanda.</h1>
+      <Header />
+
+      <main id="home">
+        <h1>Hej, jag heter Amanda.</h1>
+      </main>
     </>
   )
 }
