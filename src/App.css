@@ -18,3 +18,52 @@ nav a {
 nav a:hover {
   opacity: 0.6;
 }
+
+.hero {
+  padding: 100px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+.hero-content p {
+  margin: 24px 0;
+}
+
+.hero-links {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-links a {
+  padding: 12px 20px;
+  border: 1px solid #f5f5f5;
+  border-radius: 6px;
+}
+
+.lia-card {
+  max-width: 350px;
+  padding: 32px;
+  background-color: #1d1d1d;
+  border-radius: 12px;
+}
+
+.about {
+  padding: 80px 8%;
+  background-color: #1a1a1a;
+}
+
+.about h2 {
+  font-size: 2rem;
+}
+
+.about p {
+  max-width: 700px;
+  line-height: 1.6;
+}
