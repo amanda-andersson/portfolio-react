@@ -73,11 +73,14 @@ function Projects() {
       <div className="project-list">
         {filteredProjects.map((project) => (
           <ProjectCard
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            technologies={project.technologies}
-          />
+  key={project.id}
+  title={project.title}
+  description={project.description}
+  technologies={project.technologies}
+  image={project.image}
+  github={project.github}
+  live={project.live}
+/>
         ))}
       </div>
     </section>
