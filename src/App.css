@@ -293,9 +293,25 @@ nav a:hover {
   color: rgba(245, 241, 234, 0.82);
 }
 
+.contact-info a {
+  color: #f39ad0;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.contact-info a:hover {
+  color: white;
+}
+
 .contact-form {
   max-width: 800px;
   display: grid;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
