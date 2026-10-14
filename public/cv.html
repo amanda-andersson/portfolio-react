@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amanda Andersson | CV</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: #0e0e12;
+        color: #f5f1ea;
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .cv-wrapper {
+        width: min(1100px, calc(100% - 48px));
+        margin: 0 auto;
+        padding: 40px 0 80px;
+      }
+
+      .cv-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+      }
+
+      .back-link {
+        color: #f39ad0;
+        font-weight: 600;
+      }
+
+      .back-link:hover {
+        color: white;
+      }
+
+      .cv-link {
+        padding: 10px 18px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .cv-hero {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 60px;
+        align-items: end;
+        margin-bottom: 70px;
+      }
+
+      .section-label,
+      .cv-role {
+        color: #b8a9d8;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.85rem;
+      }
+
+      .cv-hero h1 {
+        margin: 10px 0 14px;
+        font-family: "Syne", sans-serif;
+        font-size: clamp(3rem, 7vw, 5.8rem);
+        line-height: 0.95;
+      }
+
+      .cv-contact {
+        text-align: right;
+        color: rgba(245, 241, 234, 0.82);
+      }
+
+      .cv-contact p {
+        margin: 5px 0;
+      }
+
+      .cv-contact a {
+        color: #f39ad0;
+        transition: 0.2s ease;
+      }
+
+      .cv-contact a:hover {
+        color: white;
+      }
+
+      .cv-section {
+        margin-bottom: 55px;
+      }
+
+      .cv-section h2 {
+        margin: 0 0 24px;
+        font-family: "Syne", sans-serif;
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
+      }
+
+      .cv-section > p {
+        max-width: 850px;
+        color: rgba(245, 241, 234, 0.82);
+      }
+
+      .cv-item {
+        margin-bottom: 18px;
+        padding: 24px;
+        background: #17171d;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: 22px;
+      }
+
+      .cv-item-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: flex-start;
+      }
+
+      .cv-item h3 {
+        margin: 0;
+        font-family: "Syne", sans-serif;
+        font-size: 1.2rem;
+      }
+
+      .cv-item-head span {
+        color: #b8a9d8;
+        white-space: nowrap;
+      }
+
+      .cv-item p {
+        margin: 12px 0 0;
+        color: rgba(245, 241, 234, 0.82);
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+
+      .skill-box {
+        padding: 14px 16px;
+        background: #17171d;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: 18px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      @media (max-width: 700px) {
+        .cv-wrapper {
+          width: calc(100% - 32px);
+          padding-top: 25px;
+        }
+
+        .cv-header {
+          margin-bottom: 50px;
+        }
+
+        .cv-hero {
+          grid-template-columns: 1fr;
+          gap: 30px;
+          margin-bottom: 55px;
+        }
+
+        .cv-contact {
+          text-align: left;
+        }
+
+        .cv-item-head {
+          flex-direction: column;
+          gap: 5px;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="cv-wrapper">
+      <div class="cv-header">
+        <a href="/" class="back-link">← Till portfolio</a>
+        <span class="cv-link">CV</span>
+      </div>
+
+      <section class="cv-hero">
+        <div>
+          <p class="section-label">Curriculum Vitae</p>
+          <h1>Amanda Andersson</h1>
+          <p class="cv-role">Frontend Developer Student</p>
+        </div>
+
+        <div class="cv-contact">
+          <p>
+            <a href="mailto:andersson.91.amanda@gmail.com">
+              andersson.91.amanda@gmail.com
+            </a>
+          </p>
+
+          <p>073-656 58 89</p>
+          <p>Nyköping</p>
+
+          <p>
+            <a
+              href="https://www.linkedin.com/in/amanda-andersson-b0780b404/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="https://github.com/amanda-andersson"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2>Kort om mig</h2>
+
+        <p>
+          Jag studerar till frontendutvecklare efter att ha arbetat många år
+          inom butik och service. Jag har alltid varit kreativ och haft ett
+          stort intresse för design och skapande, vilket gjorde att frontend
+          kändes som ett naturligt val för mig.
+        </p>
+
+        <p>
+          Som person är jag nyfiken och lösningsorienterad. Jag gillar att
+          grotta ner mig i olika projekt och skapa lösningar som är tydliga,
+          snygga och enkla att använda.
+        </p>
+
+        <p>
+          Från mina tidigare erfarenheter inom butik tar jag med mig
+          servicekänsla, ansvarstagande, struktur och vana att arbeta med
+          människor. Jag tycker om att lära mig nya saker och ser fram emot att
+          fortsätta utvecklas, ta mer ansvar och bygga erfarenhet inom frontend.
+        </p>
+      </section>
+
+      <section class="cv-section">
+        <h2>Erfarenhet</h2>
+
+        <article class="cv-item">
+          <div class="cv-item-head">
+            <h3>Butiksmedarbetare – Godishuset</h3>
+            <span>2015–2020</span>
+          </div>
+
+          <p>
+            Arbetade med kundservice, försäljning, kassahantering, öppning och
+            stängning samt tog ansvar i det dagliga butiksarbetet.
+          </p>
+        </article>
+
+        <article class="cv-item">
+          <div class="cv-item-head">
+            <h3>Butiksmedarbetare – Akademibokhandeln</h3>
+            <span>2012–2014</span>
+          </div>
+
+          <p>
+            Arbetade med kundservice, kassahantering och frontning av hyllor
+            och övriga uppgifter i butiken.
+          </p>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2>Utbildning</h2>
+
+        <article class="cv-item">
+          <div class="cv-item-head">
+            <h3>Frontend Developer – Medieinstitutet</h3>
+            <span>2025–pågående</span>
+          </div>
+
+          <p>
+            Utbildning inom bland annat HTML, CSS/SCSS, JavaScript, TypeScript,
+            React, UX, grafiska verktyg, API-utveckling, databaser, testning,
+            Git/GitHub och arbetsmetodik för utvecklare.
+          </p>
+        </article>
+
+        <article class="cv-item">
+          <div class="cv-item-head">
+            <h3>Kompletterande studier</h3>
+            <span>2024</span>
+          </div>
+
+          <p>
+            Gymnasiala kurser och fortsatta studier som en del av min
+            karriäromställning.
+          </p>
+        </article>
+
+        <article class="cv-item">
+          <div class="cv-item-head">
+            <h3>
+              Engelskastudier – Visingsö / Loxdale English Centre, Brighton
+            </h3>
+            <span>2013–2014</span>
+          </div>
+
+          <p>
+            Engelskastudier med inledande studier i Sverige följt av fortsatta
+            studier i Brighton.
+          </p>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2>Kompetenser</h2>
+
+        <div class="skills-grid">
+          <div class="skill-box">HTML</div>
+          <div class="skill-box">CSS / SCSS</div>
+          <div class="skill-box">JavaScript</div>
+          <div class="skill-box">TypeScript</div>
+          <div class="skill-box">React</div>
+          <div class="skill-box">REST API</div>
+          <div class="skill-box">Databaser / SQL</div>
+          <div class="skill-box">Git & GitHub</div>
+          <div class="skill-box">Figma</div>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2>Övrigt</h2>
+        <p>Referenser lämnas på begäran.</p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -48,35 +48,33 @@ function Contact() {
       <h2>Kontakt</h2>
 
       <div className="contact-info">
-        <p>
-          E-post:{' '}
-          <a href="mailto:andersson.91.amanda@gmail.com">
-            andersson.91.amanda@gmail.com
-          </a>
-        </p>
+  <p>
+    E-post:{' '}
+    <a href="mailto:andersson.91.amanda@gmail.com">
+      andersson.91.amanda@gmail.com
+    </a>
+  </p>
 
-        <p>
-          GitHub:{' '}
-          <a
-            href="https://github.com/amanda-andersson"
-            target="_blank"
-            rel="noreferrer"
-          >
-            github.com/amanda-andersson
-          </a>
-        </p>
+  <p>
+    <a
+      href="https://github.com/amanda-andersson"
+      target="_blank"
+      rel="noreferrer"
+    >
+      GitHub
+    </a>
+  </p>
 
-        <p>
-          LinkedIn:{' '}
-          <a
-            href="https://www.linkedin.com/in/amanda-andersson-b0780b404/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Amanda Andersson
-          </a>
-        </p>
-      </div>
+  <p>
+    <a
+      href="https://www.linkedin.com/in/amanda-andersson-b0780b404/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      LinkedIn
+    </a>
+  </p>
+</div>
 
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-row">

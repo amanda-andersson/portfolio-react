@@ -14,7 +14,9 @@ function Hero() {
 
         <div className="hero-links">
           <a href="#projects">Se projekt</a>
-          <a href="/cv.pdf" target="_blank">Öppna CV</a>
+          <a href="/cv.html" target="_blank" rel="noreferrer">
+  Öppna CV
+</a>
         </div>
       </div>
 
