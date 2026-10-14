@@ -30,12 +30,6 @@ function Projects() {
       <h2>Några av mina projekt</h2>
 
       <div className="project-filters">
-  <button
-    className={selectedTechnologies.includes('React') ? 'active' : ''}
-    onClick={() => toggleTechnology('React')}
-  >
-    React
-  </button>
 
   <button
     className={selectedTechnologies.includes('TypeScript') ? 'active' : ''}

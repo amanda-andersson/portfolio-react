@@ -23,7 +23,8 @@ function Hero() {
         <p>4 januari – 12 mars 2027</p>
         <p>
           Jag söker en LIA-plats där jag får utvecklas inom frontend
-          och bidra i riktiga projekt.
+          och bidra i riktiga projekt. 
+          Kanske är vi en bra match?
         </p>
       </div>
     </section>
