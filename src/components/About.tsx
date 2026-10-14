@@ -4,11 +4,7 @@ function About() {
       <h2>Om mig</h2>
 
       <p>
-        Jag håller på att skola om mig efter flera år inom butik och service.
-        Frontend utvecklare kändes som ett naturligt val eftersom jag alltid
-        har gillat design, skapande och problemlösning. Det jag tycker mest om
-        är att kombinera teknik och kreativitet för att skapa lösningar som
-        känns tydliga, snygga och enkla att använda.
+        Jag håller på att skola om mig efter att ha jobbat flera år inom butik och service. Frontendutveckling kändes som ett naturligt val eftersom jag alltid har tyckt om design, skapande och problemlösning. Det jag fastnade för är kombinationen av teknik och kreativitet – att få bygga lösningar som både ser bra ut och känns tydliga och enkla att använda.
       </p>
     </section>
   )
