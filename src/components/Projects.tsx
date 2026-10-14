@@ -51,6 +51,8 @@ function Projects() {
     <section className="projects" id="projects">
       <h2>Några av mina projekt</h2>
 
+      <p className="filter-label">Filtrera efter teknik</p>
+
       <div className="project-filters">
         <button
           className={selectedTechnologies.includes('TypeScript') ? 'active' : ''}
@@ -80,9 +82,14 @@ function Projects() {
           SCSS
         </button>
 
-        <button onClick={() => setSelectedTechnologies([])}>
-          Rensa filter
-        </button>
+        {selectedTechnologies.length > 0 && (
+          <button
+            className="clear-filter"
+            onClick={() => setSelectedTechnologies([])}
+          >
+            Rensa filter
+          </button>
+        )}
       </div>
 
       <div
