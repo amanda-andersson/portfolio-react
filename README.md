@@ -47,7 +47,7 @@ Vercel: LÄNK KOMMER
 ## Design
 
 Figma:
-https://www.figma.com/design/vaGI8zVX69fLU49ROCgvIN/Untitled?node-id=0-1&p=f&t=J6QNMi4YMeBTlF8l-0
+LÄNK KOMMER
 
 ## Reflektion
 

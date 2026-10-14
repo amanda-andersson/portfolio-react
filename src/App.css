@@ -501,3 +501,80 @@ header {
   animation: slideInRight 0.8s ease-out 0.3s both;
 }
 
+.project-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.project-list.visible .project-animation {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-section {
+  opacity: 0;
+  transform: translateY(25px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.scroll-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-animation {
+  opacity: 0;
+  transform: translateY(40px) scale(0.92);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease;
+}
+
+.skills-list.visible .skill-animation {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: -180px;
+  left: -180px;
+  border-radius: 50%;
+  background: rgba(127, 92, 255, 0.2);
+  filter: blur(90px);
+  pointer-events: none;
+  animation: floatingGlow 12s ease-in-out infinite alternate;
+}
+
+.hero-content,
+.lia-card {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes floatingGlow {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(65vw, 120px);
+  }
+
+  100% {
+    transform: translate(30vw, 220px);
+  }
+}
