@@ -9,8 +9,8 @@ function Hero() {
         </h1>
 
         <p>
-          Jag studerar till Frontend Developer på Medieinstitutet.
-        </p>
+  Jag studerar till <span className="hero-highlight">Frontend Developer</span> på Medieinstitutet.
+</p>
 
         <div className="hero-links">
           <a href="#projects">Se projekt</a>

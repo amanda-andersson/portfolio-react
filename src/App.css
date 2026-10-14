@@ -108,6 +108,11 @@ nav a:hover::after {
   color: rgba(245, 241, 234, 0.82);
 }
 
+.hero-highlight {
+  color: #b8a9d8;
+  font-weight: 600;
+}
+
 .hero-links {
   display: flex;
   gap: 16px;
