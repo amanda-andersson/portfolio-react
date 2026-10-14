@@ -1,75 +1,60 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Min personliga portfolio skapad som en del av kursen JavaScript-ramverk på Medieinstitutet.
 
-Currently, two official plugins are available:
+Portfolion är byggd med React och TypeScript och innehåller information om mig, mina kompetenser och ett urval av projekt som jag har arbetat med under utbildningen och på egen hand.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tekniker
 
-## React Compiler
+- React
+- TypeScript
+- Vite
+- CSS
+- Git & GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Funktioner
 
-## Expanding the ESLint configuration
+- Responsiv design för mobil och desktop
+- Projekt skapade från separat projektdata
+- Filtrering av projekt utifrån flera valda tekniker
+- Kontaktformulär med validering och felmeddelanden
+- Mobil navigation med hamburgermeny
+- Animation på LIA-kortet
+- Separat CV-sida
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Kör projektet lokalt
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Klona projektet:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+git clone https://github.com/amanda-andersson/portfolio-react.git
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Gå in i projektmappen:
 
-```
+cd portfolio-react
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Installera dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Starta projektet:
 
-```
+npm run dev
+
+## Live
+
+Vercel: LÄNK KOMMER
+
+## Design
+
+Figma:
+https://www.figma.com/design/vaGI8zVX69fLU49ROCgvIN/Untitled?node-id=0-1&p=f&t=J6QNMi4YMeBTlF8l-0
+
+## Reflektion
+
+Jag valde att dela upp portfolion i flera komponenter för att göra projektet tydligare och enklare att arbeta med. De olika delarna av sidan, till exempel Header, Hero, About, Projects, Skills och Contact, ligger därför i egna komponenter. Projektinformationen ligger separat från komponenterna och hämtas in i Projects där projektkorten skapas med map. På så sätt behöver jag inte skriva samma struktur flera gånger.
+
+Jag använder state på de ställen där innehållet faktiskt behöver förändras. I projektsektionen används en array för de valda teknikerna. Det gör att användaren kan välja flera filter samtidigt och även ta bort valen igen. I kontaktformuläret används state för formulärets innehåll, felmeddelanden och meddelandet som visas när formuläret är korrekt ifyllt. Mobilmenyn använder också state för att hålla reda på om menyn är öppen eller stängd.
+
+Om jag skulle fortsätta utveckla portfolion skulle jag bland annat vilja arbeta vidare med animationer och göra kontaktformuläret möjligt att använda för att faktiskt skicka meddelanden. Jag skulle också kunna göra projektinformationen ännu mer detaljerad och lägga till nya projekt efter hand.
+
+Jag har använt ChatGPT som stöd under arbetet. Jag har bland annat använt det för att diskutera struktur och design, få hjälp vid felsökning och få förslag på hur vissa delar av React- och CSS-koden kan lösas. Jag har sedan testat lösningarna i projektet och anpassat dem efter min design och uppgiftens krav.
