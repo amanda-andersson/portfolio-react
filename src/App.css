@@ -5,12 +5,13 @@ header {
   top: 0;
   z-index: 100;
   width: 100%;
-  padding: 20px 8%;
+  padding: 20px 10%;
   background: rgba(14, 14, 18, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
+/* Navigation */
 nav {
   display: flex;
   justify-content: flex-end;
@@ -53,7 +54,7 @@ nav a:hover::after {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 75px 8%;
+  padding: 75px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,6 +78,7 @@ nav a:hover::after {
     #0e0e12;
 }
 
+/* Rörligt bakgrundsglow */
 .hero::before {
   content: "";
   position: absolute;
@@ -92,6 +94,7 @@ nav a:hover::after {
 }
 
 .hero-content,
+/* LIA-kort */
 .lia-card {
   position: relative;
   z-index: 1;
@@ -103,7 +106,7 @@ nav a:hover::after {
 
 .hero-content h1 {
   margin: 0 0 24px;
-  font-size: clamp(3.4rem, 7vw, 6.5rem);
+  font-size: clamp(3.4rem, 6vw, 5.8rem);
   line-height: 0.95;
 }
 
@@ -119,6 +122,7 @@ nav a:hover::after {
   font-weight: 600;
 }
 
+/* Hero-knappar */
 .hero-links {
   display: flex;
   gap: 16px;
@@ -176,7 +180,7 @@ nav a:hover::after {
 /* OM MIG */
 
 .about {
-  padding: 55px 8%;
+  padding: 55px 10%;
 }
 
 .about h2 {
@@ -197,7 +201,7 @@ nav a:hover::after {
 /* PROJEKT */
 
 .projects {
-  padding: 55px 8%;
+  padding: 55px 10%;
 }
 
 .projects h2 {
@@ -206,6 +210,7 @@ nav a:hover::after {
   line-height: 1;
 }
 
+/* Projektfilter */
 .filter-label {
   margin: 0 0 12px;
   color: rgba(245, 241, 234, 0.72);
@@ -253,6 +258,7 @@ nav a:hover::after {
   background: transparent;
 }
 
+/* Projektgrid */
 .project-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -273,6 +279,7 @@ nav a:hover::after {
   transform: translateY(0);
 }
 
+/* Projektkort */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -347,7 +354,7 @@ nav a:hover::after {
 /* KOMPETENSER */
 
 .skills {
-  padding: 55px 8%;
+  padding: 55px 10%;
 }
 
 .skills h2 {
@@ -356,6 +363,7 @@ nav a:hover::after {
   line-height: 1;
 }
 
+/* Kompetensgrid */
 .skills-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -391,9 +399,10 @@ nav a:hover::after {
 .contact {
   position: relative;
   overflow: hidden;
-  padding: 55px 8% 70px;
+  padding: 55px 10% 70px;
 }
 
+/* Rörligt bakgrundsglow */
 .contact::before {
   content: "";
   position: absolute;
@@ -438,6 +447,7 @@ nav a:hover::after {
   color: white;
 }
 
+/* Kontaktformulär */
 .contact-form {
   max-width: 800px;
   display: grid;
@@ -575,6 +585,7 @@ h3 {
 
 /* MOBIL */
 
+/* Hamburgermeny */
 .menu-button {
   display: none;
 }

@@ -82,6 +82,13 @@ function Projects() {
           SCSS
         </button>
 
+        <button
+  className={selectedTechnologies.includes('Vite') ? 'active' : ''}
+  onClick={() => toggleTechnology('Vite')}
+>
+  Vite
+</button>
+
         {selectedTechnologies.length > 0 && (
           <button
             className="clear-filter"
