@@ -30,15 +30,25 @@ function About() {
       id="about"
       ref={aboutRef}
     >
-      <h2>Om mig</h2>
+      <div className="about-content">
+        <div className="about-text">
+          <h2>Om mig</h2>
 
-      <p>
-        Jag håller på att skola om mig efter att ha jobbat flera år inom butik
-        och service. Frontendutveckling kändes som ett naturligt val eftersom
-        jag alltid har tyckt om design, skapande och problemlösning. Det jag
-        fastnade för är kombinationen av teknik och kreativitet – att få bygga
-        lösningar som både ser bra ut och känns tydliga och enkla att använda.
-      </p>
+          <p>
+            Jag håller på att skola om mig efter att ha jobbat flera år inom butik
+            och service. Frontendutveckling kändes som ett naturligt val eftersom
+            jag alltid har tyckt om design, skapande och problemlösning. Det jag
+            fastnade för är kombinationen av teknik och kreativitet – att få bygga
+            lösningar som både ser bra ut och känns tydliga och enkla att använda.
+          </p>
+        </div>
+
+        <img
+          className="about-image"
+          src="/images/amandaportfolio.png"
+          alt="Porträtt av Amanda"
+        />
+      </div>
     </section>
   )
 }

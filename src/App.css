@@ -197,6 +197,63 @@ nav a:hover::after {
   color: rgba(245, 241, 234, 0.82);
 }
 
+/* Om mig - text och porträtt */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 0;
+  max-width: 760px;
+}
+
+/* Porträtt */
+.about-image {
+  width: 280px;
+  max-width: 35%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+  margin-right: 100px;
+
+  /* Spegelvänd bilden */
+  transform: scaleX(-1);
+
+  /* Mjuka kanter */
+  -webkit-mask-image: radial-gradient(
+    ellipse,
+    black 45%,
+    transparent 75%
+  );
+  mask-image: radial-gradient(
+    ellipse,
+    black 45%,
+    transparent 75%
+  );
+
+  /* Diskret vit kontur */
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.35));
+}
+
+/* Om mig - mobil */
+@media (max-width: 640px) {
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .about-image {
+    width: 240px;
+    max-width: 100%;
+    align-self: center;
+  }
+}
+
 
 /* PROJEKT */
 
@@ -683,5 +740,69 @@ h3 {
     background: #17171d;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 18px;
+  }
+}
+
+/* Dekorativa streck vid porträttet */
+.about-content {
+  position: relative;
+}
+
+.about-image {
+  position: relative;
+  z-index: 1;
+}
+
+/* Två streck uppe till höger */
+.about-content::before,
+.about-content::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: rgba(245, 241, 234, 0.7);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.about-content::before {
+  right: 75px;
+  top: 18%;
+  width: 55px;
+  transform: rotate(-35deg);
+}
+
+.about-content::after {
+  right: 55px;
+  top: 26%;
+  width: 35px;
+  transform: rotate(-15deg);
+}
+
+/* Tredje strecket nere till vänster */
+.about-text {
+  position: relative;
+}
+
+.about-text::after {
+  content: "";
+  position: absolute;
+  right: -250px;
+  bottom: -35px;
+  width: 75px;
+  height: 35px;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 75 35'%3E%3Cpath d='M3 22 C18 5 26 5 39 18 S58 31 72 12' fill='none' stroke='%23f5f1ea' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transform: rotate(60deg);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .about-content::before,
+  .about-content::after,
+  .about-text::after {
+    display: none;
   }
 }
